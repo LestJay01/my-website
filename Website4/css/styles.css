@@ -1,0 +1,179 @@
+
+
+footer{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:#ffe6f3;
+    text-align: center;
+    z-index: 1000;
+}
+html, body, h1, p, ul, li, a, footer, header, .styled-form {
+    cursor: url("../images/pointer.png"), pointer;
+    cursor: url("../images/hand.png"), auto;
+
+}
+/* Reset some default styles */
+body, h1, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #ffccff;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header and Navigation */
+header {
+    background: linear-gradient(90deg, #ce75b3, #ffe6f3);
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #fff;
+    color: #ffccff;
+    border-radius: 5px;
+}
+
+/* Main Section */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    color: #0066ff;
+    margin-bottom: 1rem;
+}
+
+main p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* General Form Styles */
+.form{
+    padding-top: 15rem;
+
+}
+.styled-form {
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #ffe4e9, #ffb6c1);
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Adds a playful, modern feel */
+    color: #333;
+    text-align: center;
+}
+
+/* Label Styles */
+.styled-form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #d36cca;
+}
+
+/* Input Field Styles */
+.styled-form input[type="date"] {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 2px solid #ffd1dc;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.styled-form input[type="date"]:focus {
+    border-color: #ff69b4;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+    outline: none;
+}
+
+/* Button Styles */
+.styled-form button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(255, 105, 180, 0.3);
+}
+
+.styled-form button:hover {
+    background-color: #ffe6f3;
+    color: #ff69b4;
+    box-shadow: 0 8px 12px rgba(255, 105, 180, 0.4);
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+    .styled-form {
+        padding: 1rem;
+    }
+
+    .styled-form button {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+}
+
